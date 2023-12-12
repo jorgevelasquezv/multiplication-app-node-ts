@@ -14,7 +14,8 @@ export class CreateTable implements CreateTableUseCase {
     execute({ base, limit = 10 }: CreateTableOptions) {
         let outPutMessage = '';
         for (let i = 1; i <= limit; i++) {
-            outPutMessage += `${base} * ${i} = ${base * i}\n`;
+            outPutMessage += `${base} * ${i} = ${base * i}`;
+            if (i !== limit) outPutMessage += '\n';
         }
         return outPutMessage;
     }

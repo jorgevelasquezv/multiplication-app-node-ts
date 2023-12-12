@@ -5,9 +5,6 @@ import { yarg } from './config/plugins/args.plugins';
 
 const {b: base, l: limit, s: showTable} = yarg;
 
-// const base = 5;
-// const limit = 10;
-
 const multiplication = (base: number, limit: number) => {
     let message = `====================================\n           Tabla del ${base}\n====================================\n`;
     for (let i = 1; i <= limit; i++) {
